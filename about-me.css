@@ -1,0 +1,112 @@
+/* typography */
+h1,h2,h3{
+    color:#143774;
+}
+
+
+aside{
+    color:#143774;
+}
+
+.widget-title{
+    font-weight:800;
+}
+
+.widget2-body{
+  font-weight:600;
+}
+
+
+
+
+img{
+    width:100%;
+}
+
+.profile-image{
+    height:300px;
+    object-fit: cover;
+}
+
+/* mobile-fisrt-approach */
+.container-bottom{
+    display:flex;
+    flex-direction: column;
+}
+
+/* changing order */
+.my-profile{
+    display:flex;
+    flex-direction: column;
+    margin-bottom: 3em;
+}
+.profile-image{
+   order:-2;
+}
+
+.profile-title{
+  order:-1;
+}
+
+.sidebar-widget{
+    border: 20px solid #EBEBEB;
+    padding:1em;
+    margin-bottom: 3rem;
+}
+
+.widget1-image{
+    height: 130px;
+    object-fit: cover;
+}
+
+.widget2-image{
+    height: 110px;
+    object-fit: cover;
+}
+
+
+
+
+
+
+/* designing for large-screen */
+@media (min-width:800px){
+    .container-bottom{
+        flex-direction: row;
+        justify-content: space-between;
+
+    }
+    
+    main{
+        width:70%;
+    }
+    
+    aside{
+        width:25%;
+    }
+
+    .my-profile{
+        margin-bottom: 0;
+    }
+
+    .sidebar-widget{
+        border: 20px solid #EBEBEB;
+        padding:1em;
+        margin-bottom: 5rem;
+    }
+    }
+
+    .widget1-body{
+        margin:1em 0;
+    }
+
+    .widget2-body{
+        margin:1em 0;
+        width:61%;
+    }
+
+    
+    .wrp3{
+        border-width:0;
+    }
+   

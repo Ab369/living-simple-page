@@ -1,0 +1,196 @@
+/* typography */
+h1,h2,h3{
+    color:#143774;
+}
+
+.article-read-more{
+    color:#1792D2;
+    text-decoration:none;
+    font-weight:600;
+    font-stretch:ultra-expanded;
+}
+
+.article-info{
+    color:#707070;
+    font-size:0.7rem;
+    font-weight:600;
+}
+aside{
+    color:#143774;
+}
+
+.widget-title{
+    font-weight:800;
+}
+
+.widget2-body{
+  font-weight:600;
+}
+
+
+
+
+img{
+    width:100%;
+}
+
+
+
+/* mobile-fisrt-approach */
+.container-bottom{
+    display:flex;
+    flex-direction: column;
+}
+
+article{
+    margin-bottom:2em;
+}
+
+.sidebar-widget{
+    border: 20px solid #EBEBEB;
+    padding:1em;
+    margin-bottom: 3rem;
+}
+
+.widget1-image{
+    height: 130px;
+    object-fit: cover;
+}
+
+.widget2-image{
+    height: 110px;
+    object-fit: cover;
+}
+
+.article-info{
+    margin:1em 0;
+}
+
+.article-body{
+    margin:1.5em 0;
+}
+
+/* adding linebreak */
+.article-featured{
+    border-bottom: 3px solid #EBEBEB;
+    padding-bottom:1.5em;
+    margin-bottom:1.5em;
+}
+
+/* changing order */
+.article-recent{
+    display:flex;
+    flex-direction:column;
+}
+
+.article-recent-main
+{
+    order:2;
+}
+
+.article-recent-secondary{
+    order:1;
+}
+
+/* change order */
+.article-featured{
+    display: flex;
+    flex-direction: column;
+}
+
+.article-featured-image{
+   order:-4;
+}
+
+.article-featured-info{
+  order:-3;
+}
+
+.article-featured-title{
+   order:-2;
+   margin-bottom:0;
+}
+
+.article-featured-info{
+    text-align:left;
+    margin: 1em 0;
+}
+
+footer{
+    background-color:#143774;
+    color:white;
+}
+
+@media screen and (max-width:600px){
+    .article-info{
+        text-align:right;
+    }
+    
+    .article-recent-title{
+        margin-top:-1.2em;
+    }
+}
+/* designing for large-screen */
+@media screen and (min-width:800px){
+    .container-bottom{
+        flex-direction: row;
+        justify-content: space-between;
+
+    }
+    
+    main{
+        width:70%;
+    }
+    
+    aside{
+        width:25%;
+    }
+
+    .article-recent{
+        display:flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .article-recent-main{
+       width:75%;
+    }
+
+    .article-recent-secondary{
+        width:20%;
+    }
+
+    .sidebar-widget{
+        border: 20px solid #EBEBEB;
+        padding:1em;
+        margin-bottom: 5rem;
+    }
+    }
+
+    .widget1-body{
+        margin:1em 0;
+    }
+
+    .widget2-body{
+        margin:1em 0;
+        width:61%;
+    }
+
+    /* .article-recent-title{
+        margin-top:0.1em;
+    } */
+
+    .article-recent-image{
+        height: 216px;
+        object-fit: cover;
+    }
+
+    .widget-recent-post{
+        border-bottom: 2px solid #EBEBEB;
+        margin-bottom: 0.5em;
+    }
+
+    .wrp3{
+        border-width:0;
+    }
+   
